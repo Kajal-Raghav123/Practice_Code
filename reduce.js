@@ -42,16 +42,95 @@
 //   return acc;
 // }, {});
 // console.log(count)
-const users = [
-  { name: "Alice", age: 20 },
-  { name: "Bob", age: 25 },
-  { name: "Charlie", age: 20 },
+// const users = [
+//   { name: "Alice", age: 20 },
+//   { name: "Bob", age: 25 },
+//   { name: "Charlie", age: 20 },
+// ];
+// const age = users.reduce((acc, curr) => {
+//   if (!acc[curr.age]) {
+//     acc[curr.age] = [];
+//   }
+//   acc[curr.age].push(curr.name);
+//   return acc;
+// }, {});
+// console.log(age);
+
+// ------day2
+
+// const words = ["apple", "banana", "apple","orange","banana","apple"];
+// const obj = words.reduce((acc,cur)=>{
+//   acc[cur] = (acc[cur]|| 0) + 1;
+//   return acc
+// },{})
+
+// console.log(obj)
+// const users = [
+//   {name: "Alice", age: 25},
+//   {name: "Bob", age: 30},
+//   {name: "Charlie", age:25}
+// ];
+// const group = users.reduce((acc, curr)=>{
+// if(!acc[curr.age]){
+//   acc[curr.age] = [];
+// }
+// acc[curr.age].push(curr.name)
+// return acc
+
+// },{})
+// console.log(group)
+
+// const students = [
+//   { name: 'A', score: 78 },
+//   { name: 'B', score: 92 },
+//   { name: 'C', score: 89 }
+// ];
+// const highScore = students.reduce((max,curr)=>{
+// if(curr.score > max.score){
+//   max = curr
+// }
+// return max
+// },students[0])
+
+// console.log(highScore)
+
+// const people = [
+//   { id: 1, name: 'Alice' },
+//   { id: 2, name: 'Bob' }
+// ];
+// const id = people.reduce((acc,curr)=>{
+//   acc[curr.id] = curr.name
+//   return acc
+// },{})
+// console.log(id)
+// const nested = [[1, 2], [3, 4], [5]];
+// const flattned = nested.reduce((acc,curr)=>{
+//   return acc.concat(curr)
+// },[])
+
+// console.log(flattned)
+const data = [
+  { name: 'Pen', tags: ['stationery', 'writing'] },
+  { name: 'Eraser', tags: ['stationery'] }
 ];
-const age = users.reduce((acc, curr) => {
-  if (!acc[curr.age]) {
-    acc[curr.age] = [];
-  }
-  acc[curr.age].push(curr.name);
-  return acc;
-}, {});
-console.log(age);
+// const tagsOut = data.reduce((acc,curr)=>{
+// if(!acc[curr.tags]){
+// acc.push(curr.tags)
+// }
+// return acc
+// },[])
+// console.log(tagsOut)
+// const uniqueTag = data.reduce((acc,curr)=>{
+// curr.tags.forEach(tag=>{
+//   if(!acc.includes(tag)){
+//     acc.push(tag)
+//   }
+  
+// })
+// return acc
+// },[])
+// console.log(uniqueTag)
+const orders = [
+  { customer: 'Alice', items: [{ price: 30 }, { price: 20 }] },
+  { customer: 'Bob', items: [{ price: 15 }] }
+];
