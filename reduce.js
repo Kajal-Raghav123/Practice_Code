@@ -130,7 +130,29 @@ const data = [
 // return acc
 // },[])
 // console.log(uniqueTag)
-const orders = [
-  { customer: 'Alice', items: [{ price: 30 }, { price: 20 }] },
-  { customer: 'Bob', items: [{ price: 15 }] }
-];
+
+
+// const age = users.reduce((acc,curr)=>{
+//   if(!acc[curr.age]){
+//     acc[curr.age]= []
+//   }
+//   acc[curr.age].push(curr.name)
+//   return acc
+// },new Map())
+// console.log(age)
+// const users = [
+//   { name: 'Alice', age: 30 },
+//   { name: 'Bob', age: 25 },
+//   { name: 'Charlie', age: 30 },
+//   { name: 'David', age: 25 },
+// ];
+// const age = users.reduce((acc,curr)=>{
+//   if(!acc.has(curr.age)){
+//     acc.set(curr.age,[])
+//   }
+//   acc.get(curr.age).push(curr.name)
+//   return acc
+
+// } ,new Map())
+// const agegroup = Object.fromEntries(age)
+// console.log(agegroup)
